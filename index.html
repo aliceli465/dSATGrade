@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSAT Grading</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form onsubmit="grade(event)">
+        <div style="display:flex;">
+            <div style="padding-right: 100px;"> 
+                <h3>Enter your student answers here:</h1>
+                <textarea type="text" id="textInput" name="textValue" style="width: 300px; height:600px;"></textarea>
+            </div>
+            <div style="margin-top:50px;"> 
+                <label for="testNumber">Select test</label>
+                <br>
+                <select id="testNumber" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="b1">Bluebook Test 1</option>
+                    <option value="b2">Bluebook Test 2</option>
+                    <option value="b3">Bluebook Test 3</option>
+                    <option value="b4">Bluebook Test 4</option>
+                    <option value="l1">Linear Test 1</option>
+                    <option value="l2">Linear Test 2</option>
+                    <option value="l3">Linear Test 1</option>
+                    <option value="l4">Linear Test 1</option>
+                </select>
+                <br><br>
+                <label for="rw">Select easy/hard for RW module 2</label>
+                <br>
+                <select id="rw" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="b1">Easy</option>
+                    <option value="b2">Hard</option>
+                </select>
+                <br><br>
+                <label for="math">Select easy/hard for math module 2</label>
+                <br>
+                <select id="math" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="b1">Easy</option>
+                    <option value="b2">Hard</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit" class="cute-button"> 
+            </div>
+        </div>
+
+
+    </form>
+    <!--when the form submits, 
+    1) record the test
+    2) variable for easy/hard for reading
+    3) variable for easy/hard for math
+    4) render each of the mustache templates and set previous html to display: none
+
+    templates: 
+         - whole test
+         - incorrect/omitted only without answers
+         - incorrect/omitted with answers
+    
+    option 1: keep all the question JSON file from before. This way we can keep a counter for each question
+        compare each column individually. have gradeRW(), gradeRW2(), gradeMath(), gradeMath2(). 
+        For each function, pull the first column and have the answers stored. use basic for loop to record array of questions missed. 
+        For each question missed, increase its counter by 1
+        Have a local storage array that maybe records each of the student specific ones missed. add event listener
+        so localstorage is cleared when user exits:
+            window.addEventListener('beforeunload', function() {
+                // Clear the localStorage
+                localStorage.clear();
+            });
+        
+        in summary: keep each questions thing as a window.JSON object for global usage
+        have a nav bar at the top so we can see live stats of the most missed questions etc. etc.
+        this would be data vis
+    -->
+    <script>
+       function submitForm(event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+        }
+    </script>
+
+    <!--results-->
+
+    <div id="results" style="display:none;">
+        <h1>Results</h1>
+        <h3>Press ctrl + p to export this page as a PDF and to use during the lesson!</h3>
+    </div>
+</body>
+</html>
