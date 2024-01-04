@@ -3,13 +3,14 @@
 <head>
     <title>DSAT Grading</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/helpers.js"></script>
 </head>
 <body>
-    <form onsubmit="grade(event)">
+    <form id="gradeForm">
         <div style="display:flex;">
             <div style="padding-right: 100px;"> 
-                <h3>Enter your student answers here:</h1>
-                <textarea type="text" id="textInput" name="textValue" style="width: 300px; height:600px;"></textarea>
+                <h3>Paste your student answers here:</h1>
+                <textarea type="text" id="answers" name="textValue" style="width: 300px; height:600px;"></textarea>
             </div>
             <div style="margin-top:50px;"> 
                 <label for="testNumber">Select test</label>
@@ -20,29 +21,25 @@
                     <option value="b2">Bluebook Test 2</option>
                     <option value="b3">Bluebook Test 3</option>
                     <option value="b4">Bluebook Test 4</option>
-                    <option value="l1">Linear Test 1</option>
-                    <option value="l2">Linear Test 2</option>
-                    <option value="l3">Linear Test 1</option>
-                    <option value="l4">Linear Test 1</option>
                 </select>
                 <br><br>
-                <label for="rw">Select easy/hard for RW module 2</label>
+                <label for="rwEH">Select easy/hard for RW module 2</label>
                 <br>
-                <select id="rw" required>
+                <select id="rwEH" required>
                     <option value="" selected disabled>Select an option</option>
                     <option value="b1">Easy</option>
                     <option value="b2">Hard</option>
                 </select>
                 <br><br>
-                <label for="math">Select easy/hard for math module 2</label>
+                <label for="mathEH">Select easy/hard for math module 2</label>
                 <br>
-                <select id="math" required>
+                <select id="mathEH" required>
                     <option value="" selected disabled>Select an option</option>
                     <option value="b1">Easy</option>
                     <option value="b2">Hard</option>
                 </select>
                 <br><br>
-                <input type="submit" value="Submit" class="cute-button"> 
+                <input type="submit" value="Grade!" class="cute-button">
             </div>
         </div>
 
@@ -61,8 +58,9 @@
     
     option 1: keep all the question JSON file from before. This way we can keep a counter for each question
         compare each column individually. have gradeRW(), gradeRW2(), gradeMath(), gradeMath2(). 
-        For each function, pull the first column and have the answers stored. use basic for loop to record array of questions missed. 
-        For each question missed, increase its counter by 1
+        For each function:
+            - go through each column. set the selected-answer in JSON. If not === for RW or in [] for math, 
+        For each question missed, increase its missed in mongoDB by one
         Have a local storage array that maybe records each of the student specific ones missed. add event listener
         so localstorage is cleared when user exits:
             window.addEventListener('beforeunload', function() {
@@ -73,11 +71,16 @@
         in summary: keep each questions thing as a window.JSON object for global usage
         have a nav bar at the top so we can see live stats of the most missed questions etc. etc.
         this would be data vis
+
+        we could keep two arrays: questions[], studentAnswers[]
+        change the mustache script to render the correct images given question number and correct path based on test and easy/hard section
     -->
     <script>
        function submitForm(event) {
             event.preventDefault(); // Prevents the default form submission behavior
+            gradeTest();
         }
+        document.getElementById('gradeForm').addEventListener('submit', submitForm);
     </script>
 
     <!--results-->
