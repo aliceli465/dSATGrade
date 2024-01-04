@@ -75,7 +75,7 @@ window.mathEasyQuestions3 = {
     {
       "question": 10,
       "images": [
-        "../images/bb3/math/c10.png"
+        "../images/bb3/math/c10.png","../images/bb3/math/c10.2.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -155,7 +155,7 @@ window.mathEasyQuestions3 = {
     {
       "question": 20,
       "images": [
-        "../images/bb3/math/c20.png"
+        "../images/bb3/math/c20.png", "../images/bb3/math/c20.2.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"

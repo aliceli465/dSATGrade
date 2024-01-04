@@ -138,7 +138,7 @@ window.mathQuestions4 = {
       "question": 15,
       "type": "mcq",
       "images": [
-        "../images/bb4/math/nc15.png"
+        "../images/bb4/math/nc15.png","../images/bb4/math/nc15.2.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"

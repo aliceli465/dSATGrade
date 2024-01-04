@@ -3,7 +3,7 @@ window.mathHardQuestions3 = {
     {
       "question": 1,
       "images": [
-        "../images/bb3/math/c1.png"
+        "../images/bb3/math/c1.png","../images/bb3/math/c1.2.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -91,7 +91,7 @@ window.mathHardQuestions3 = {
     {
       "question": 12,
       "images": [
-        "../images/bb3/math/c12.png"
+        "../images/bb3/math/c12.png", "../images/bb3/math/c12.2.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
