@@ -1,4 +1,4 @@
-window.mathQuestions1 = {
+window.mathQuestions = {
     "questions": [
         {
             "question": 1,

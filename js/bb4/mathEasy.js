@@ -167,49 +167,6 @@ window.mathEasyQuestions4 = {
       ],
       "selected-answer": "",
       "actual-answer": "D"
-    },
-    {
-      "question": 22,
-      "images": [
-        "../images/bb4/math/c22.png"
-      ],
-      "selected-answer": "",
-      "actual-answer": "A"
-    },
-    {
-      "question": 23,
-      "images": [
-        "../images/bb4/math/c23.png"
-      ],
-      "selected-answer": ""
-    },
-    {
-      "question": 24,
-      "images": [
-        "../images/bb4/math/c24.png"
-      ],
-      "selected-answer": ""
-    },
-    {
-      "question": 25,
-      "images": [
-        "../images/bb4/math/c25.png"
-      ],
-      "selected-answer": ""
-    },
-    {
-      "question": 26,
-      "images": [
-        "../images/bb4/math/c26.png"
-      ],
-      "selected-answer": ""
-    },
-    {
-      "question": 27,
-      "images": [
-        "../images/bb4/math/c27.png"
-      ],
-      "selected-answer": ""
     }
   ]
 };

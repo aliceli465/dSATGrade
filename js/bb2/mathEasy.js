@@ -175,41 +175,6 @@ window.mathEasyQuestions2 = {
       ],
       "selected-answer": "",
       "actual-answer": "C"
-    },
-    {
-      "question": 23,
-      "images": [
-        "../images/bb2/math/c23.png"
-      ],
-      "selected-answer": ""
-    },
-    {
-      "question": 24,
-      "images": [
-        "../images/bb2/math/c24.png"
-      ],
-      "selected-answer": ""
-    },
-    {
-      "question": 25,
-      "images": [
-        "../images/bb2/math/c25.png"
-      ],
-      "selected-answer": ""
-    },
-    {
-      "question": 26,
-      "images": [
-        "../images/bb2/math/c26.png"
-      ],
-      "selected-answer": ""
-    },
-    {
-      "question": 27,
-      "images": [
-        "../images/bb2/math/c27.png"
-      ],
-      "selected-answer": ""
     }
   ]
 };

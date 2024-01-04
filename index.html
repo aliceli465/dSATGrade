@@ -4,8 +4,19 @@
     <title>DSAT Grading</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/helpers.js"></script>
+    <script src="js/bb1/math.js"></script><script src="js/bb1/mathEasy.js"></script><script src="js/bb1/mathHard.js"></script><script src="js/bb1/rw.js"></script><script src="js/bb1/rwEasy.js"></script><script src="js/bb1/rwHard.js"></script>
+    <script src="js/bb2/math.js"></script><script src="js/bb2/mathEasy.js"></script><script src="js/bb2/mathHard.js"></script><script src="js/bb2/rw.js"></script><script src="js/bb2/rwEasy.js"></script><script src="js/bb2/rwHard.js"></script>
+    <script src="js/bb3/math.js"></script><script src="js/bb3/mathEasy.js"></script><script src="js/bb3/mathHard.js"></script><script src="js/bb3/rw.js"></script><script src="js/bb3/rwEasy.js"></script><script src="js/bb3/rwHard.js"></script>
+    <script src="js/bb4/math.js"></script><script src="js/bb4/mathEasy.js"></script><script src="js/bb4/mathHard.js"></script><script src="js/bb4/rw.js"></script><script src="js/bb4/rwEasy.js"></script><script src="js/bb4/rwHard.js"></script>
 </head>
 <body>
+    <button onclick="clearStorage()"></button>
+    <script>
+        function clearStorage() {
+            localStorage.clear();
+            console.log("local storage cleared!");
+        }
+    </script>
     <form id="gradeForm">
         <div style="display:flex;">
             <div style="padding-right: 100px;"> 
@@ -17,26 +28,26 @@
                 <br>
                 <select id="testNumber" required>
                     <option value="" selected disabled>Select an option</option>
-                    <option value="b1">Bluebook Test 1</option>
-                    <option value="b2">Bluebook Test 2</option>
-                    <option value="b3">Bluebook Test 3</option>
-                    <option value="b4">Bluebook Test 4</option>
+                    <option value="1">Bluebook Test 1</option>
+                    <option value="2">Bluebook Test 2</option>
+                    <option value="3">Bluebook Test 3</option>
+                    <option value="4">Bluebook Test 4</option>
                 </select>
                 <br><br>
                 <label for="rwEH">Select easy/hard for RW module 2</label>
                 <br>
                 <select id="rwEH" required>
                     <option value="" selected disabled>Select an option</option>
-                    <option value="b1">Easy</option>
-                    <option value="b2">Hard</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Hard">Hard</option>
                 </select>
                 <br><br>
                 <label for="mathEH">Select easy/hard for math module 2</label>
                 <br>
                 <select id="mathEH" required>
                     <option value="" selected disabled>Select an option</option>
-                    <option value="b1">Easy</option>
-                    <option value="b2">Hard</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Hard">Hard</option>
                 </select>
                 <br><br>
                 <input type="submit" value="Grade!" class="cute-button">
@@ -81,6 +92,10 @@
             gradeTest();
         }
         document.getElementById('gradeForm').addEventListener('submit', submitForm);
+        window.addEventListener('beforeunload', function() {
+                // Clear the localStorage
+                localStorage.clear();
+        });
     </script>
 
     <!--results-->
