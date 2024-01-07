@@ -45,4 +45,8 @@ body {
     /* top right bottom left*/
     clip-path: inset(70px 0px 80px 0px);
   }
+
+  figure {
+    border-bottom: 1px solid #000; /* Replace with your desired border color */
+  }
   

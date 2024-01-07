@@ -87,34 +87,49 @@ function gradeTest() {
     console.log(JSON.parse(localStorage.getItem('rw2')));
     console.log(JSON.parse(localStorage.getItem('math1')));
     console.log(JSON.parse(localStorage.getItem('math2')));
+
+    document.getElementById('gradeForm').style.display = 'none';
+    document.getElementById('selectPDF').style.display = 'block';
 }
 
-function loadResults() {
+function loadResults(rwTemplate, mathTemplate) {
     var rw1_ = JSON.parse(localStorage.getItem("rw1"));
     var rw2_ = JSON.parse(localStorage.getItem("rw2"));
     var math1_ = JSON.parse(localStorage.getItem("math1"));
     var math2_ = JSON.parse(localStorage.getItem("math2"));
 
-    var rw_output = Mustache.render($("#rwResult").html(), {
+    //Entire test with answers:  #rwE, #mathE
+    //Incorrect only w/o answer key: #rwINA, #mathINA
+    //Incorrect only with answer key:  #rwIA, #mathIA
+    if(rwTemplate === "rwE") {
+        document.getElementById("resultType").textContent = "Entire test with answers";
+    }
+    else if(rwTemplate === "rwINA") {
+        document.getElementById("resultType").textContent = "Incorrect w/o answers";
+    }
+    else{
+        document.getElementById("resultType").textContent = "Incorrect with answers";
+    }
+    var rw_output = Mustache.render($("#"+rwTemplate).html(), {
         questions: rw1_.questions.map(function(question) {
             question.isCorrect = question["actual-answer"] === question["selected-answer"] && question["selected-answer"].trim() !== "";
             return question;
         })
     });
-    var rw_output2 = Mustache.render($("#rwResult").html(), {
+    var rw_output2 = Mustache.render($("#"+rwTemplate).html(), {
         questions: rw2_.questions.map(function(question) {
             question.isCorrect = question["actual-answer"] === question["selected-answer"] && question["selected-answer"].trim() !== "";
             return question;
         })
     });
-    var math_output = Mustache.render($("#mathResult").html(), {
+    var math_output = Mustache.render($("#"+mathTemplate).html(), {
         questions: math1_.questions.map(function(question) {
             question.isMcq = question.type === 'mcq';
             question.isCorrect = question["actual-answer"].includes(question["selected-answer"]) && question["selected-answer"].trim() !== "";
             return question;
         })
     });
-    var math_output2 = Mustache.render($("#mathResult").html(), {
+    var math_output2 = Mustache.render($("#"+mathTemplate).html(), {
         questions: math2_.questions.map(function(question) {
             question.isMcq = question.type === 'mcq';
             question.isCorrect = question["actual-answer"].includes(question["selected-answer"]) && question["selected-answer"].trim() !== "";
@@ -122,14 +137,12 @@ function loadResults() {
         })
     });
 
-    $("#rw_results").append(rw_output);
-    $("#rw2_results").append(rw_output2);
-    $("#math_results").append(math_output);
-    $("#math2_results").append(math_output2);
+    $("#rw_results").html("<h3>R/W Module 1</h3>" + rw_output);
+    $("#rw2_results").html("<h3>R/W Module 1</h3>" + rw_output2);
+    $("#math_results").html("<h3>R/W Module 1</h3>" + math_output);
+    $("#math2_results").html("<h3>R/W Module 1</h3>" + math_output2);
 
     //change visuals
-    document.getElementById('gradeForm').style.display = 'none';
     document.getElementById('results').style.display = 'block';
-
 }
 

@@ -55,19 +55,73 @@
        function submitForm(event) {
             event.preventDefault(); // Prevents the default form submission behavior
             gradeTest();
-            loadResults();
-            // console.log("reading with answers");
-            // console.log(JSON.parse(localStorage.getItem('rw1')));
-            // console.log("reading2");
-            // console.log(JSON.parse(localStorage.getItem('rw2')));
-            // console.log("math");
-            // console.log(JSON.parse(localStorage.getItem('math1')));
-            // console.log("math 2");
-            // console.log(JSON.parse(localStorage.getItem('math2')));
         }
         document.getElementById('gradeForm').addEventListener('submit', submitForm);
     </script>
-    <script type="text/x-mustache" id="rwResult">
+
+    <!--select screen-->
+    <div id="selectPDF" style="display:none;">
+        <h2>Select which PDF you would like to view</h2>
+        <button class="cute-button" onclick="entireAnswer()">Entire test with answers</button>
+        <button class="cute-button" onclick="incorrectNoAnswer()">Incorrect only w/o answer key</button>
+        <button class="cute-button" onclick="incorrectWithAnswer()">Incorrect only with answer key</button>
+        <script>
+            //Entire test with answers:  #rwE, #mathE
+            //Incorrect only w/o answer key: #rwINA, #mathINA
+            //Incorrect only with answer key:  #rwIA, #mathIA
+            function entireAnswer() {
+                console.log("setting entire test with answers");
+                loadResults("rwE", "mathE");
+            }
+            function incorrectNoAnswer() {
+                console.log("setting incorrect w/o answers");
+                loadResults("rwINA", "mathINA");
+            }
+            function incorrectWithAnswer() {
+                console.log("setting incorrect with answers");
+                loadResults("rwIA", "mathIA");
+            }
+        </script>
+    </div>
+    <!--results-->
+    <div id="results" style="display:none;">
+        <h1 id="resultType"></h1>
+        <h3>Press ctrl + p to export this page as a PDF and to use during the lesson!</h3>
+        <p>*IMPORTANT* Once you're done and YOU HAVE YOUR PDFs SAVED, click this button to clear your session data!</p>
+        <button style="width:100px; height:50px;"onclick="clearStorage()">Clear session</button>
+        <script>
+            function clearStorage() {
+                localStorage.clear();
+                console.log("local storage cleared!");
+                window.location.href = "yay.html";
+            }
+        </script>
+        <h2>Jump to section:</h2>
+        <ul>
+            <li><a href="#rw_results">Reading/Writing 1</a></li>
+            <li><a href="#rw2_results">Reading/Writing 2</a></li>
+            <li><a href="#math_results">Math 1</a></li>
+            <li><a href="#math2_results">Math 2</a></li>
+        </ul>
+        <div id="rw_results">
+        
+        </div>
+        <div id="rw2_results">
+
+        </div>
+        <div id="math_results">
+            
+        </div>
+        <div id="math2_results">
+            
+        </div>
+    </div>
+
+
+    <!--mustache scripts-->
+
+    <!--no answers incorrect-->
+    <script type="text/x-mustache" id="rwINA">
         {{#questions}}
             {{^isCorrect}}
                 <figure style="display: inline-block; margin-left: 100px;">
@@ -85,7 +139,7 @@
             {{/isCorrect}}
         {{/questions}}
     </script>
-    <script type="text/x-mustache" id="mathResult">
+    <script type="text/x-mustache" id="mathINA">
         {{#questions}}
             {{^isCorrect}}
                 <figure style="display: inline-block; margin-left: 50px;">
@@ -108,39 +162,138 @@
             {{/isCorrect}}
         {{/questions}}
     </script>
-    <!--results-->
-    <div id="results" style="display:none;">
-        <h1>Results</h1>
-        <h3>Press ctrl + p to export this page as a PDF and to use during the lesson!</h3>
-        <p>*IMPORTANT* Once you're done and YOU HAVE YOUR PDF SAVED, click this button to clear your session data!</p>
-        <button style="width:100px; height:50px;"onclick="clearStorage()">Clear session</button>
-        <script>
-            function clearStorage() {
-                localStorage.clear();
-                console.log("local storage cleared!");
-                window.location.href = "yay.html";
-            }
-        </script>
-        <h2>Jump to section:</h2>
-        <ul>
-            <li><a href="#rw_results">Reading/Writing 1</a></li>
-            <li><a href="#rw2_results">Reading/Writing 2</a></li>
-            <li><a href="#math_results">Math 1</a></li>
-            <li><a href="#math2_results">Math 2</a></li>
-        </ul>
-        <div id="rw_results">
-            <h3>R/W Module 1</h3>
-        </div>
-        <div id="rw2_results">
-            <h3>R/W Module 2</h3>
-        </div>
-        <div id="math_results">
-            <h3>Math Module 1</h3>
-        </div>
-        <div id="math2_results">
-            <h3>Math Module 2</h3>
-        </div>
-    </div>
 
+    <!--incorrect only with answer-->
+    <script type="text/x-mustache" id="rwIA">
+        {{#questions}}
+            {{^isCorrect}}
+                <figure style="display: inline-block; margin-left: 100px;">
+                    <figcaption><span style="background-color:rgb(240, 103, 121)">{{question}})</span></figcaption>
+                    {{#images}}
+                        <img src="{{.}}" class="rw-crop">
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                    <p>The correct answer is {{actual-answer}}</p>
+                </figure>
+            {{/isCorrect}}
+        {{/questions}}
+    </script>
+    <script type="text/x-mustache" id="mathIA">
+        {{#questions}}
+            {{^isCorrect}}
+                <figure style="display: inline-block; margin-left: 50px;">
+                    <figcaption style="padding-bottom: 50px;"><span style="background-color:rgb(240, 103, 121)">{{question}})</span></figcaption>
+                    {{#images}}
+                        {{#isMcq}}
+                            <img src="{{.}}" class="math-crop">
+                        {{/isMcq}}
+                        {{^isMcq}}
+                            <img src="{{.}}" class="math-crop-frq">
+                        {{/isMcq}}
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                    {{#isMcq}}
+                        <p>The correct answer is {{actual-answer}}</p>
+                    {{/isMcq}}
+                    {{^isMcq}}
+                        <p>Accepted answers are: {{#actual-answer}}{{.}}{{/actual-answer}}</p>
+                    {{/isMcq}}
+                </figure>
+            {{/isCorrect}}
+        {{/questions}}
+    </script>
+
+    <!--entire with answer-->
+    <script type="text/x-mustache" id="rwE">
+        {{#questions}}
+            {{#isCorrect}}
+                <figure style="display: inline-block; margin-left: 100px;">
+                    <figcaption><span style="background-color:rgb(105, 240, 103)">{{question}})</span></figcaption>
+                    {{#images}}
+                        <img src="{{.}}" class="rw-crop">
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                </figure>
+            {{/isCorrect}}
+            {{^isCorrect}}
+                <figure style="display: inline-block; margin-left: 100px;">
+                    <figcaption><span style="background-color:rgb(240, 103, 121)">{{question}})</span></figcaption>
+                    {{#images}}
+                        <img src="{{.}}" class="rw-crop">
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                    <p>The correct answer is {{actual-answer}}</p>
+                </figure>
+            {{/isCorrect}}
+        {{/questions}}
+    </script>
+    <script type="text/x-mustache" id="mathE">
+        {{#questions}}
+            {{#isCorrect}}
+                <figure style="display: inline-block; margin-left: 50px;">
+                    <figcaption style="padding-bottom: 50px;"><span style="background-color:rgb(105, 240, 103)">{{question}})</span></figcaption>
+                    {{#images}}
+                        {{#isMcq}}
+                            <img src="{{.}}" class="math-crop">
+                        {{/isMcq}}
+                        {{^isMcq}}
+                            <img src="{{.}}" class="math-crop-frq">
+                        {{/isMcq}}
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                </figure>
+            {{/isCorrect}}
+            {{^isCorrect}}
+                <figure style="display: inline-block; margin-left: 50px;">
+                    <figcaption style="padding-bottom: 50px;"><span style="background-color:rgb(240, 103, 121)">{{question}})</span></figcaption>
+                    {{#images}}
+                        {{#isMcq}}
+                            <img src="{{.}}" class="math-crop">
+                        {{/isMcq}}
+                        {{^isMcq}}
+                            <img src="{{.}}" class="math-crop-frq">
+                        {{/isMcq}}
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                    {{#isMcq}}
+                        <p>The correct answer is {{actual-answer}}</p>
+                    {{/isMcq}}
+                    {{^isMcq}}
+                        <p>Accepted answers are: {{#actual-answer}}{{.}}{{/actual-answer}}</p>
+                    {{/isMcq}}
+                </figure>
+            {{/isCorrect}}
+        {{/questions}}
+    </script>
 </body>
 </html>
