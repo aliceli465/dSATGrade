@@ -54,8 +54,8 @@
     <script>
        function submitForm(event) {
             event.preventDefault(); // Prevents the default form submission behavior
-            setJSON();
-            //loadResults();
+            gradeTest();
+            loadResults();
             // console.log("reading with answers");
             // console.log(JSON.parse(localStorage.getItem('rw1')));
             // console.log("reading2");
@@ -69,20 +69,6 @@
     </script>
     <script type="text/x-mustache" id="rwResult">
         {{#questions}}
-            {{#isCorrect}}
-                <figure style="display: inline-block; margin-left: 100px;">
-                    <figcaption><span style="background-color:rgb(105, 240, 103)">{{question}})</span></figcaption>
-                    {{#images}}
-                        <img src="{{.}}" class="rw-crop">
-                    {{/images}}
-                    {{#selected-answer}}
-                        <p>You put {{selected-answer}}</p>
-                    {{/selected-answer}}
-                    {{^selected-answer}}
-                        <p>You left this empty</p>
-                    {{/selected-answer}}
-                </figure>
-            {{/isCorrect}}
             {{^isCorrect}}
                 <figure style="display: inline-block; margin-left: 100px;">
                     <figcaption><span style="background-color:rgb(240, 103, 121)">{{question}})</span></figcaption>
@@ -101,28 +87,9 @@
     </script>
     <script type="text/x-mustache" id="mathResult">
         {{#questions}}
-            {{#isCorrect}}
-                <figure style="display: inline-block; margin-left: 50px;">
-                    <figcaption><span style="background-color:rgb(105, 240, 103)">{{question}})</span></figcaption>
-                    {{#images}}
-                        {{#isMcq}}
-                            <img src="{{.}}" class="math-crop">
-                        {{/isMcq}}
-                        {{^isMcq}}
-                            <img src="{{.}}" class="math-crop-frq">
-                        {{/isMcq}}
-                    {{/images}}
-                    {{#selected-answer}}
-                        <p>You put {{selected-answer}}</p>
-                    {{/selected-answer}}
-                    {{^selected-answer}}
-                        <p>You left this empty</p>
-                    {{/selected-answer}}
-                </figure>
-            {{/isCorrect}}
             {{^isCorrect}}
                 <figure style="display: inline-block; margin-left: 50px;">
-                    <figcaption><span style="background-color:rgb(240, 103, 121)">{{question}})</span></figcaption>
+                    <figcaption style="padding-bottom: 50px;"><span style="background-color:rgb(240, 103, 121)">{{question}})</span></figcaption>
                     {{#images}}
                         {{#isMcq}}
                             <img src="{{.}}" class="math-crop">
@@ -145,32 +112,35 @@
     <div id="results" style="display:none;">
         <h1>Results</h1>
         <h3>Press ctrl + p to export this page as a PDF and to use during the lesson!</h3>
+        <p>*IMPORTANT* Once you're done and YOU HAVE YOUR PDF SAVED, click this button to clear your session data!</p>
+        <button style="width:100px; height:50px;"onclick="clearStorage()">Clear session</button>
+        <script>
+            function clearStorage() {
+                localStorage.clear();
+                console.log("local storage cleared!");
+                window.location.href = "yay.html";
+            }
+        </script>
         <h2>Jump to section:</h2>
         <ul>
             <li><a href="#rw_results">Reading/Writing 1</a></li>
-            <li><a href="#rw2_reuslts">Reading/Writing 2</a></li>
+            <li><a href="#rw2_results">Reading/Writing 2</a></li>
             <li><a href="#math_results">Math 1</a></li>
             <li><a href="#math2_results">Math 2</a></li>
         </ul>
         <div id="rw_results">
-
+            <h3>R/W Module 1</h3>
         </div>
         <div id="rw2_results">
-
+            <h3>R/W Module 2</h3>
         </div>
         <div id="math_results">
-
+            <h3>Math Module 1</h3>
         </div>
         <div id="math2_results">
-
+            <h3>Math Module 2</h3>
         </div>
     </div>
-    <button style="width:100px; height:100px;"onclick="clearStorage()">Clear localStorage</button>
-    <script>
-        function clearStorage() {
-            localStorage.clear();
-            console.log("local storage cleared!");
-        }
-    </script>
+
 </body>
 </html>

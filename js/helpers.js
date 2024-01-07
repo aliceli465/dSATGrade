@@ -37,9 +37,9 @@ function gradeTest() {
     localStorage.setItem('rw2', JSON.stringify(window['rw'+rwEH+'Questions'+testNum]));
     console.log("successfully set rw2");
     localStorage.setItem('math1', JSON.stringify(window['mathQuestions'+testNum]));
-    console.log("successfully set rw3");
+    console.log("successfully set math1");
     localStorage.setItem('math2', JSON.stringify(window['math'+mathEH+'Questions'+testNum]));
-    console.log("successfully set rw4");
+    console.log("successfully set math2");
 
     //extract vals into cols
     for (let i = 0; i < rows.length; i++) {
@@ -48,8 +48,18 @@ function gradeTest() {
         studentRW2.push(columns[1].toUpperCase());
         //for math, if mcq, set selected-answer to uppercase
         if(i < 22) {
-            studentMath.push(columns[2]);
-            studentMath2.push(columns[3]);
+            if(!(/\d/.test(columns[2]))) {
+                studentMath.push(columns[2].toUpperCase());
+            }
+            else{
+                studentMath.push(columns[2]);
+            }
+            if(!(/\d/.test(columns[3]))) {
+                studentMath.push(columns[2].toUpperCase());
+            }
+            else{
+                studentMath.push(columns[3]);
+            }
         }
 
     }
@@ -72,6 +82,11 @@ function gradeTest() {
     localStorage.setItem('rw2', JSON.stringify(rw2_));
     localStorage.setItem('math1', JSON.stringify(math1_));
     localStorage.setItem('math2', JSON.stringify(math2_));
+
+    console.log(JSON.parse(localStorage.getItem('rw1')));
+    console.log(JSON.parse(localStorage.getItem('rw2')));
+    console.log(JSON.parse(localStorage.getItem('math1')));
+    console.log(JSON.parse(localStorage.getItem('math2')));
 }
 
 function loadResults() {

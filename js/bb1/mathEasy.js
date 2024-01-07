@@ -129,7 +129,7 @@ window.mathEasyQuestions1 = {
         {
             "question": 19,
             "type": "mcq",
-            "images": ["../images/bb1/mathEasy/c19.png","../images/bb1/mathEasy/c19.2.png"],
+            "images": ["../images/bb1/mathEasy/c19.png"],
             "selected-answer": "",
             "actual-answer": "B"
         },

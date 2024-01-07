@@ -2,6 +2,7 @@ window.mathEasyQuestions4 = {
   "questions": [
     {
       "question": 1,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c1.png"
       ],
@@ -10,6 +11,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 2,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c2.png"
       ],
@@ -18,46 +20,62 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 3,
+      "type": "frq",
       "images": [
         "../images/bb4/mathEasy/c3.png"
       ],
       "selected-answer": "",
-      "actual-answer": "2520"
+      "actual-answer": [
+        "2520"
+      ]
     },
     {
       "question": 4,
+      "type": "frq",
       "images": [
         "../images/bb4/mathEasy/c4.png"
       ],
       "selected-answer": "",
-      "actual-answer": "40"
+      "actual-answer": [
+        "40"
+      ]
     },
     {
       "question": 5,
+      "type": "frq",
       "images": [
         "../images/bb4/mathEasy/c5.png"
       ],
       "selected-answer": "",
-      "actual-answer": "7"
+      "actual-answer": [
+        "7"
+      ]
     },
     {
       "question": 6,
+      "type": "frq",
       "images": [
         "../images/bb4/mathEasy/c6.png"
       ],
       "selected-answer": "",
-      "actual-answer": "30"
+      "actual-answer": [
+        "30"
+      ]
     },
     {
       "question": 7,
+      "type": "frq",
       "images": [
         "../images/bb4/mathEasy/c7.png"
       ],
       "selected-answer": "",
-      "actual-answer": "180"
+      "actual-answer": [
+        "180"
+      ]
     },
     {
       "question": 8,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c8.png"
       ],
@@ -66,6 +84,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 9,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c9.png"
       ],
@@ -74,6 +93,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 10,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c10.png"
       ],
@@ -82,6 +102,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 11,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c11.png"
       ],
@@ -90,6 +111,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 12,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c12.png"
       ],
@@ -98,6 +120,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 13,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c13.png"
       ],
@@ -106,6 +129,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 14,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c14.png"
       ],
@@ -114,6 +138,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 15,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c15.png"
       ],
@@ -122,6 +147,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 16,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c16.png"
       ],
@@ -130,6 +156,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 17,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c17.png"
       ],
@@ -138,6 +165,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 18,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c18.png"
       ],
@@ -146,6 +174,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 19,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c19.png"
       ],
@@ -154,6 +183,7 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 20,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c20.png"
       ],
@@ -162,11 +192,21 @@ window.mathEasyQuestions4 = {
     },
     {
       "question": 21,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathEasy/c21.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
+    },
+    {
+      "question": 22,
+      "type": "mcq",
+      "images": [
+        "../images/bb4/mathEasy/c22.png"
+      ],
+      "selected-answer": "",
+      "actual-answer": "A"
     }
   ]
 };

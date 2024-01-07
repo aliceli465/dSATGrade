@@ -94,7 +94,7 @@ window.mathHardQuestions1 = {
         {
             "question": 14,
             "type": "mcq",
-            "images": ["../images/bb1/mathHard/c14.png","../images/bb1/mathHard/c14.2.png"],
+            "images": ["../images/bb1/mathHard/c14.png"],
             "selected-answer": "",
             "actual-answer": "A"
         },

@@ -2,6 +2,7 @@ window.mathHardQuestions4 = {
   "questions": [
     {
       "question": 1,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c1.png"
       ],
@@ -10,6 +11,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 2,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c2.png"
       ],
@@ -18,6 +20,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 3,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c3.png"
       ],
@@ -26,6 +29,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 4,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c4.png"
       ],
@@ -34,6 +38,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 5,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c5.png"
       ],
@@ -42,6 +47,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 6,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c6.png"
       ],
@@ -50,6 +56,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 7,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c7.png"
       ],
@@ -58,6 +65,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 8,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c8.png"
       ],
@@ -66,6 +74,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 9,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c9.png"
       ],
@@ -74,6 +83,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 10,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c10.png"
       ],
@@ -82,38 +92,52 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 11,
+      "type": "frq",
       "images": [
         "../images/bb4/mathHard/c11.png"
       ],
       "selected-answer": "",
-      "actual-answer": "-.9333, -14/15"
+      "actual-answer": [
+        "-.9333",
+        "-14/15"
+      ]
     },
     {
       "question": 12,
+      "type": "frq",
       "images": [
         "../images/bb4/mathHard/c12.png"
       ],
       "selected-answer": "",
-      "actual-answer": "4.06"
+      "actual-answer": [
+        "4.06"
+      ]
     },
     {
       "question": 13,
+      "type": "frq",
       "images": [
         "../images/bb4/mathHard/c13.png"
       ],
       "selected-answer": "",
-      "actual-answer": "289"
+      "actual-answer": [
+        "289"
+      ]
     },
     {
       "question": 14,
+      "type": "frq",
       "images": [
         "../images/bb4/mathHard/c14.png"
       ],
       "selected-answer": "",
-      "actual-answer": "44"
+      "actual-answer": [
+        "44"
+      ]
     },
     {
       "question": 15,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c15.png"
       ],
@@ -122,14 +146,19 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 16,
+      "type": "frq",
       "images": [
         "../images/bb4/mathHard/c16.png"
       ],
       "selected-answer": "",
-      "actual-answer": "14.5, 29/2"
+      "actual-answer": [
+        "14.5",
+        "29/2"
+      ]
     },
     {
       "question": 17,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c17.png"
       ],
@@ -138,6 +167,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 18,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c18.png"
       ],
@@ -146,6 +176,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 19,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c19.png"
       ],
@@ -154,14 +185,18 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 20,
+      "type": "frq",
       "images": [
         "../images/bb4/mathHard/c20.png"
       ],
       "selected-answer": "",
-      "actual-answer": "10"
+      "actual-answer": [
+        "10"
+      ]
     },
     {
       "question": 21,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c21.png"
       ],
@@ -170,6 +205,7 @@ window.mathHardQuestions4 = {
     },
     {
       "question": 22,
+      "type": "mcq",
       "images": [
         "../images/bb4/mathHard/c22.png"
       ],

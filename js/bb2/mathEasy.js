@@ -2,6 +2,7 @@ window.mathEasyQuestions2 = {
   "questions": [
     {
       "question": 1,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c1.png"
       ],
@@ -10,6 +11,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 2,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c2.png"
       ],
@@ -18,6 +20,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 3,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c3.png"
       ],
@@ -26,6 +29,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 4,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c4.png"
       ],
@@ -34,22 +38,29 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 5,
+      "type": "frq",
       "images": [
         "../images/bb2/mathEasy/c5.png"
       ],
       "selected-answer": "",
-      "actual-answer": "192"
+      "actual-answer": [
+        "192"
+      ]
     },
     {
       "question": 6,
+      "type": "frq",
       "images": [
         "../images/bb2/mathEasy/c6.png"
       ],
       "selected-answer": "",
-      "actual-answer": "50"
+      "actual-answer": [
+        "50"
+      ]
     },
     {
       "question": 7,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c7.png"
       ],
@@ -58,22 +69,30 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 8,
+      "type": "frq",
       "images": [
         "../images/bb2/mathEasy/c8.png"
       ],
       "selected-answer": "",
-      "actual-answer": "10"
+      "actual-answer": [
+        "10"
+      ]
     },
     {
       "question": 9,
+      "type": "frq",
       "images": [
         "../images/bb2/mathEasy/c9.png"
       ],
       "selected-answer": "",
-      "actual-answer": "15, -5"
+      "actual-answer": [
+        "15",
+        "-5"
+      ]
     },
     {
       "question": 10,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c10.png"
       ],
@@ -82,6 +101,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 11,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c11.png"
       ],
@@ -90,6 +110,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 12,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c12.png"
       ],
@@ -98,6 +119,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 13,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c13.png"
       ],
@@ -106,6 +128,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 14,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c14.png"
       ],
@@ -114,6 +137,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 15,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c15.png"
       ],
@@ -122,14 +146,18 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 16,
+      "type": "frq",
       "images": [
         "../images/bb2/mathEasy/c16.png"
       ],
       "selected-answer": "",
-      "actual-answer": "986"
+      "actual-answer": [
+        "986"
+      ]
     },
     {
       "question": 17,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c17.png"
       ],
@@ -138,6 +166,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 18,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c18.png"
       ],
@@ -146,6 +175,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 19,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c19.png"
       ],
@@ -154,6 +184,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 20,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c20.png"
       ],
@@ -162,6 +193,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 21,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c21.png"
       ],
@@ -170,6 +202,7 @@ window.mathEasyQuestions2 = {
     },
     {
       "question": 22,
+      "type": "mcq",
       "images": [
         "../images/bb2/mathEasy/c22.png"
       ],

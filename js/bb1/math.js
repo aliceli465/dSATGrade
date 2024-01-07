@@ -1,4 +1,4 @@
-window.mathQuestions = {
+window.mathQuestions1 = {
     "questions": [
         {
             "question": 1,
@@ -31,7 +31,7 @@ window.mathQuestions = {
         {
             "question": 5,
             "type": "mcq",
-            "images": ["../images/bb1/math/nc5.png","../images/bb1/math/nc5.2.png"],
+            "images": ["../images/bb1/math/nc5.png"],
             "selected-answer": "",
             "actual-answer": "A"            
         },

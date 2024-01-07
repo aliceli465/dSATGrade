@@ -2,6 +2,7 @@ window.mathEasyQuestions3 = {
   "questions": [
     {
       "question": 1,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c1.png"
       ],
@@ -10,6 +11,7 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 2,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c2.png"
       ],
@@ -18,30 +20,40 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 3,
+      "type": "frq",
       "images": [
         "../images/bb3/mathEasy/c3.png"
       ],
       "selected-answer": "",
-      "actual-answer": "40"
+      "actual-answer": [
+        "40"
+      ]
     },
     {
       "question": 4,
+      "type": "frq",
       "images": [
         "../images/bb3/mathEasy/c4.png"
       ],
       "selected-answer": "",
-      "actual-answer": "9"
+      "actual-answer": [
+        "9"
+      ]
     },
     {
       "question": 5,
+      "type": "frq",
       "images": [
         "../images/bb3/mathEasy/c5.png"
       ],
       "selected-answer": "",
-      "actual-answer": "2"
+      "actual-answer": [
+        "2"
+      ]
     },
     {
       "question": 6,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c6.png"
       ],
@@ -50,6 +62,7 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 7,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c7.png"
       ],
@@ -58,6 +71,7 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 8,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c8.png"
       ],
@@ -66,6 +80,7 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 9,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c9.png"
       ],
@@ -74,22 +89,27 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 10,
+      "type": "mcq",
       "images": [
-        "../images/bb3/mathEasy/c10.png","../images/bb3/mathEasy/c10.2.png"
+        "../images/bb3/mathEasy/c10.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
     },
     {
       "question": 11,
+      "type": "frq",
       "images": [
         "../images/bb3/mathEasy/c11.png"
       ],
       "selected-answer": "",
-      "actual-answer": "70"
+      "actual-answer": [
+        "70"
+      ]
     },
     {
       "question": 12,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c12.png"
       ],
@@ -98,6 +118,7 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 13,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c13.png"
       ],
@@ -106,6 +127,7 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 14,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c14.png"
       ],
@@ -114,6 +136,7 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 15,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c15.png"
       ],
@@ -122,6 +145,7 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 16,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c16.png"
       ],
@@ -130,22 +154,29 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 17,
+      "type": "frq",
       "images": [
         "../images/bb3/mathEasy/c17.png"
       ],
       "selected-answer": "",
-      "actual-answer": "9"
+      "actual-answer": [
+        "9"
+      ]
     },
     {
       "question": 18,
+      "type": "frq",
       "images": [
         "../images/bb3/mathEasy/c18.png"
       ],
       "selected-answer": "",
-      "actual-answer": "6"
+      "actual-answer": [
+        "6"
+      ]
     },
     {
       "question": 19,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c19.png"
       ],
@@ -154,14 +185,16 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 20,
+      "type": "mcq",
       "images": [
-        "../images/bb3/mathEasy/c20.png", "../images/bb3/mathEasy/c20.2.png"
+        "../images/bb3/mathEasy/c20.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
     },
     {
       "question": 21,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c21.png"
       ],
@@ -170,6 +203,7 @@ window.mathEasyQuestions3 = {
     },
     {
       "question": 22,
+      "type": "mcq",
       "images": [
         "../images/bb3/mathEasy/c22.png"
       ],

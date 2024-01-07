@@ -89,20 +89,20 @@ function writeJSONToFile(fileName, jsonData, windowVariable) {
   console.log(`JSON file created at: ${filePath}`);
 }
 
-const rw = convertRW(answerKey, 'rw', 'r', 0);
-writeJSONToFile('rw.js', rw, 'rwQuestions');
+// const rw = convertRW(answerKey, 'rw', 'r', 0);
+// writeJSONToFile('rw.js', rw, 'rwQuestions');
 
-const wEasy = convertRW(answerKey, 'rwEasy', 'w', 1);
-writeJSONToFile('rwEasy.js', wEasy, 'rwEasyQuestions');
+// const wEasy = convertRW(answerKey, 'rwEasy', 'w', 1);
+// writeJSONToFile('rwEasy.js', wEasy, 'rwEasyQuestions');
 
-const wHard = convertRW(answerKey, 'rwHard', 'w', 2);
-writeJSONToFile('rwHard.js', wHard, 'rwHardQuestions');
+// const wHard = convertRW(answerKey, 'rwHard', 'w', 2);
+// writeJSONToFile('rwHard.js', wHard, 'rwHardQuestions');
 
-const math = convertMath(answerKey, 'math', 'nc', 3);
-writeJSONToFile('math.js', math, 'mathQuestions');
+// const math = convertMath(answerKey, 'math', 'nc', 3);
+// writeJSONToFile('math.js', math, 'mathQuestions');
 
-const mathEasy = convertRW(answerKey, 'math', 'c', 4);
+const mathEasy = convertMath(answerKey, 'mathEasy', 'c', 4);
 writeJSONToFile('mathEasy.js', mathEasy, 'mathEasyQuestions');
 
-const mathHard = convertRW(answerKey, 'math', 'c', 5);
+const mathHard = convertMath(answerKey, 'mathHard', 'c', 5);
 writeJSONToFile('mathHard.js', mathHard, 'mathHardQuestions');
