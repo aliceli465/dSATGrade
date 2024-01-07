@@ -2,7 +2,7 @@ window.rwQuestions1 = {
     "questions": [
         {
             "question": 1,
-            "images": ["../images/bb1/rw/r1.png"],
+            "images": ["images/bb1/rw/r1.png"],
             "selected-answer": "",
             "actual-answer": "A"
         },
