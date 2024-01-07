@@ -3,7 +3,7 @@ window.rwHardQuestions3 = {
     {
       "question": 1,
       "images": [
-        "../images/bb3/rwHard/w1.png"
+        "images/bb3/rwHard/w1.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -11,7 +11,7 @@ window.rwHardQuestions3 = {
     {
       "question": 2,
       "images": [
-        "../images/bb3/rwHard/w2.png"
+        "images/bb3/rwHard/w2.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -19,7 +19,7 @@ window.rwHardQuestions3 = {
     {
       "question": 3,
       "images": [
-        "../images/bb3/rwHard/w3.png"
+        "images/bb3/rwHard/w3.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -27,7 +27,7 @@ window.rwHardQuestions3 = {
     {
       "question": 4,
       "images": [
-        "../images/bb3/rwHard/w4.png"
+        "images/bb3/rwHard/w4.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -35,7 +35,7 @@ window.rwHardQuestions3 = {
     {
       "question": 5,
       "images": [
-        "../images/bb3/rwHard/w5.png"
+        "images/bb3/rwHard/w5.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -43,7 +43,7 @@ window.rwHardQuestions3 = {
     {
       "question": 6,
       "images": [
-        "../images/bb3/rwHard/w6.png"
+        "images/bb3/rwHard/w6.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -51,7 +51,7 @@ window.rwHardQuestions3 = {
     {
       "question": 7,
       "images": [
-        "../images/bb3/rwHard/w7.png"
+        "images/bb3/rwHard/w7.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -59,7 +59,7 @@ window.rwHardQuestions3 = {
     {
       "question": 8,
       "images": [
-        "../images/bb3/rwHard/w8.png"
+        "images/bb3/rwHard/w8.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -67,7 +67,7 @@ window.rwHardQuestions3 = {
     {
       "question": 9,
       "images": [
-        "../images/bb3/rwHard/w9.png"
+        "images/bb3/rwHard/w9.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -75,7 +75,7 @@ window.rwHardQuestions3 = {
     {
       "question": 10,
       "images": [
-        "../images/bb3/rwHard/w10.png"
+        "images/bb3/rwHard/w10.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -83,7 +83,7 @@ window.rwHardQuestions3 = {
     {
       "question": 11,
       "images": [
-        "../images/bb3/rwHard/w11.png"
+        "images/bb3/rwHard/w11.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -91,7 +91,7 @@ window.rwHardQuestions3 = {
     {
       "question": 12,
       "images": [
-        "../images/bb3/rwHard/w12.png"
+        "images/bb3/rwHard/w12.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -99,7 +99,7 @@ window.rwHardQuestions3 = {
     {
       "question": 13,
       "images": [
-        "../images/bb3/rwHard/w13.png"
+        "images/bb3/rwHard/w13.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -107,7 +107,7 @@ window.rwHardQuestions3 = {
     {
       "question": 14,
       "images": [
-        "../images/bb3/rwHard/w14.png"
+        "images/bb3/rwHard/w14.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -115,7 +115,7 @@ window.rwHardQuestions3 = {
     {
       "question": 15,
       "images": [
-        "../images/bb3/rwHard/w15.png"
+        "images/bb3/rwHard/w15.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -123,7 +123,7 @@ window.rwHardQuestions3 = {
     {
       "question": 16,
       "images": [
-        "../images/bb3/rwHard/w16.png"
+        "images/bb3/rwHard/w16.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -131,7 +131,7 @@ window.rwHardQuestions3 = {
     {
       "question": 17,
       "images": [
-        "../images/bb3/rwHard/w17.png"
+        "images/bb3/rwHard/w17.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -139,7 +139,7 @@ window.rwHardQuestions3 = {
     {
       "question": 18,
       "images": [
-        "../images/bb3/rwHard/w18.png"
+        "images/bb3/rwHard/w18.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -147,7 +147,7 @@ window.rwHardQuestions3 = {
     {
       "question": 19,
       "images": [
-        "../images/bb3/rwHard/w19.png"
+        "images/bb3/rwHard/w19.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -155,7 +155,7 @@ window.rwHardQuestions3 = {
     {
       "question": 20,
       "images": [
-        "../images/bb3/rwHard/w20.png"
+        "images/bb3/rwHard/w20.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -163,7 +163,7 @@ window.rwHardQuestions3 = {
     {
       "question": 21,
       "images": [
-        "../images/bb3/rwHard/w21.png"
+        "images/bb3/rwHard/w21.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -171,7 +171,7 @@ window.rwHardQuestions3 = {
     {
       "question": 22,
       "images": [
-        "../images/bb3/rwHard/w22.png"
+        "images/bb3/rwHard/w22.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -179,7 +179,7 @@ window.rwHardQuestions3 = {
     {
       "question": 23,
       "images": [
-        "../images/bb3/rwHard/w23.png"
+        "images/bb3/rwHard/w23.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -187,7 +187,7 @@ window.rwHardQuestions3 = {
     {
       "question": 24,
       "images": [
-        "../images/bb3/rwHard/w24.png"
+        "images/bb3/rwHard/w24.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -195,7 +195,7 @@ window.rwHardQuestions3 = {
     {
       "question": 25,
       "images": [
-        "../images/bb3/rwHard/w25.png"
+        "images/bb3/rwHard/w25.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -203,7 +203,7 @@ window.rwHardQuestions3 = {
     {
       "question": 26,
       "images": [
-        "../images/bb3/rwHard/w26.png"
+        "images/bb3/rwHard/w26.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -211,7 +211,7 @@ window.rwHardQuestions3 = {
     {
       "question": 27,
       "images": [
-        "../images/bb3/rwHard/w27.png"
+        "images/bb3/rwHard/w27.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"

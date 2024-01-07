@@ -4,7 +4,7 @@ window.mathQuestions3 = {
       "question": 1,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc1.png"
+        "images/bb3/math/nc1.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -13,7 +13,7 @@ window.mathQuestions3 = {
       "question": 2,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc2.png"
+        "images/bb3/math/nc2.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -22,7 +22,7 @@ window.mathQuestions3 = {
       "question": 3,
       "type": "frq",
       "images": [
-        "../images/bb3/math/nc3.png"
+        "images/bb3/math/nc3.png"
       ],
       "selected-answer": "",
       "actual-answer": [
@@ -34,7 +34,7 @@ window.mathQuestions3 = {
       "question": 4,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc4.png"
+        "images/bb3/math/nc4.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -43,7 +43,7 @@ window.mathQuestions3 = {
       "question": 5,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc5.png"
+        "images/bb3/math/nc5.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -52,7 +52,7 @@ window.mathQuestions3 = {
       "question": 6,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc6.png"
+        "images/bb3/math/nc6.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -61,7 +61,7 @@ window.mathQuestions3 = {
       "question": 7,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc7.png"
+        "images/bb3/math/nc7.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -70,7 +70,7 @@ window.mathQuestions3 = {
       "question": 8,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc8.png"
+        "images/bb3/math/nc8.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -79,7 +79,7 @@ window.mathQuestions3 = {
       "question": 9,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc9.png"
+        "images/bb3/math/nc9.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -88,7 +88,7 @@ window.mathQuestions3 = {
       "question": 10,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc10.png"
+        "images/bb3/math/nc10.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -97,7 +97,7 @@ window.mathQuestions3 = {
       "question": 11,
       "type": "frq",
       "images": [
-        "../images/bb3/math/nc11.png"
+        "images/bb3/math/nc11.png"
       ],
       "selected-answer": "",
       "actual-answer": [
@@ -108,7 +108,7 @@ window.mathQuestions3 = {
       "question": 12,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc12.png"
+        "images/bb3/math/nc12.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -117,7 +117,7 @@ window.mathQuestions3 = {
       "question": 13,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc13.png"
+        "images/bb3/math/nc13.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -126,7 +126,7 @@ window.mathQuestions3 = {
       "question": 14,
       "type": "frq",
       "images": [
-        "../images/bb3/math/nc14.png"
+        "images/bb3/math/nc14.png"
       ],
       "selected-answer": "",
       "actual-answer": [
@@ -137,7 +137,7 @@ window.mathQuestions3 = {
       "question": 15,
       "type": "frq",
       "images": [
-        "../images/bb3/math/nc15.png"
+        "images/bb3/math/nc15.png"
       ],
       "selected-answer": "",
       "actual-answer": [
@@ -148,7 +148,7 @@ window.mathQuestions3 = {
       "question": 16,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc16.png"
+        "images/bb3/math/nc16.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -157,7 +157,7 @@ window.mathQuestions3 = {
       "question": 17,
       "type": "frq",
       "images": [
-        "../images/bb3/math/nc17.png"
+        "images/bb3/math/nc17.png"
       ],
       "selected-answer": "",
       "actual-answer": [
@@ -168,7 +168,7 @@ window.mathQuestions3 = {
       "question": 18,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc18.png"
+        "images/bb3/math/nc18.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -177,7 +177,7 @@ window.mathQuestions3 = {
       "question": 19,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc19.png"
+        "images/bb3/math/nc19.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -186,7 +186,7 @@ window.mathQuestions3 = {
       "question": 20,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc20.png"
+        "images/bb3/math/nc20.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -195,7 +195,7 @@ window.mathQuestions3 = {
       "question": 21,
       "type": "frq",
       "images": [
-        "../images/bb3/math/nc21.png"
+        "images/bb3/math/nc21.png"
       ],
       "selected-answer": "",
       "actual-answer": [
@@ -206,7 +206,7 @@ window.mathQuestions3 = {
       "question": 22,
       "type": "mcq",
       "images": [
-        "../images/bb3/math/nc22.png"
+        "images/bb3/math/nc22.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
