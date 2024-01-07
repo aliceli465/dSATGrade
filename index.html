@@ -3,22 +3,15 @@
 <head>
     <title>DSAT Grading</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/helpers.js"></script>
     <script src="js/bb1/math.js"></script><script src="js/bb1/mathEasy.js"></script><script src="js/bb1/mathHard.js"></script><script src="js/bb1/rw.js"></script><script src="js/bb1/rwEasy.js"></script><script src="js/bb1/rwHard.js"></script>
     <script src="js/bb2/math.js"></script><script src="js/bb2/mathEasy.js"></script><script src="js/bb2/mathHard.js"></script><script src="js/bb2/rw.js"></script><script src="js/bb2/rwEasy.js"></script><script src="js/bb2/rwHard.js"></script>
     <script src="js/bb3/math.js"></script><script src="js/bb3/mathEasy.js"></script><script src="js/bb3/mathHard.js"></script><script src="js/bb3/rw.js"></script><script src="js/bb3/rwEasy.js"></script><script src="js/bb3/rwHard.js"></script>
     <script src="js/bb4/math.js"></script><script src="js/bb4/mathEasy.js"></script><script src="js/bb4/mathHard.js"></script><script src="js/bb4/rw.js"></script><script src="js/bb4/rwEasy.js"></script><script src="js/bb4/rwHard.js"></script>
     <script src="stuff/jquery/dist/jquery.min.js"></script>
     <script src="stuff/mustache/mustache.min.js"></script>
+    <script src="js/helpers.js"></script>
 </head>
 <body>
-    <button onclick="clearStorage()"></button>
-    <script>
-        function clearStorage() {
-            localStorage.clear();
-            console.log("local storage cleared!");
-        }
-    </script>
     <form id="gradeForm">
         <div style="display:flex;">
             <div style="padding-right: 100px;"> 
@@ -58,53 +51,126 @@
 
 
     </form>
-    <!--when the form submits, 
-    1) record the test
-    2) variable for easy/hard for reading
-    3) variable for easy/hard for math
-    4) render each of the mustache templates and set previous html to display: none
-
-    templates: 
-         - whole test
-         - incorrect/omitted only without answers
-         - incorrect/omitted with answers
-    
-    option 1: keep all the question JSON file from before. This way we can keep a counter for each question
-        compare each column individually. have gradeRW(), gradeRW2(), gradeMath(), gradeMath2(). 
-        For each function:
-            - go through each column. set the selected-answer in JSON. If not === for RW or in [] for math, 
-        For each question missed, increase its missed in mongoDB by one
-        Have a local storage array that maybe records each of the student specific ones missed. add event listener
-        so localstorage is cleared when user exits:
-            window.addEventListener('beforeunload', function() {
-                // Clear the localStorage
-                localStorage.clear();
-            });
-        
-        in summary: keep each questions thing as a window.JSON object for global usage
-        have a nav bar at the top so we can see live stats of the most missed questions etc. etc.
-        this would be data vis
-
-        we could keep two arrays: questions[], studentAnswers[]
-        change the mustache script to render the correct images given question number and correct path based on test and easy/hard section
-    -->
     <script>
        function submitForm(event) {
             event.preventDefault(); // Prevents the default form submission behavior
-            gradeTest();
+            setJSON();
+            //loadResults();
+            // console.log("reading with answers");
+            // console.log(JSON.parse(localStorage.getItem('rw1')));
+            // console.log("reading2");
+            // console.log(JSON.parse(localStorage.getItem('rw2')));
+            // console.log("math");
+            // console.log(JSON.parse(localStorage.getItem('math1')));
+            // console.log("math 2");
+            // console.log(JSON.parse(localStorage.getItem('math2')));
         }
         document.getElementById('gradeForm').addEventListener('submit', submitForm);
-        window.addEventListener('beforeunload', function() {
-                // Clear the localStorage
-                localStorage.clear();
-        });
     </script>
-
+    <script type="text/x-mustache" id="rwResult">
+        {{#questions}}
+            {{#isCorrect}}
+                <figure style="display: inline-block; margin-left: 100px;">
+                    <figcaption><span style="background-color:rgb(105, 240, 103)">{{question}})</span></figcaption>
+                    {{#images}}
+                        <img src="{{.}}" class="rw-crop">
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                </figure>
+            {{/isCorrect}}
+            {{^isCorrect}}
+                <figure style="display: inline-block; margin-left: 100px;">
+                    <figcaption><span style="background-color:rgb(240, 103, 121)">{{question}})</span></figcaption>
+                    {{#images}}
+                        <img src="{{.}}" class="rw-crop">
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                </figure>
+            {{/isCorrect}}
+        {{/questions}}
+    </script>
+    <script type="text/x-mustache" id="mathResult">
+        {{#questions}}
+            {{#isCorrect}}
+                <figure style="display: inline-block; margin-left: 50px;">
+                    <figcaption><span style="background-color:rgb(105, 240, 103)">{{question}})</span></figcaption>
+                    {{#images}}
+                        {{#isMcq}}
+                            <img src="{{.}}" class="math-crop">
+                        {{/isMcq}}
+                        {{^isMcq}}
+                            <img src="{{.}}" class="math-crop-frq">
+                        {{/isMcq}}
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                </figure>
+            {{/isCorrect}}
+            {{^isCorrect}}
+                <figure style="display: inline-block; margin-left: 50px;">
+                    <figcaption><span style="background-color:rgb(240, 103, 121)">{{question}})</span></figcaption>
+                    {{#images}}
+                        {{#isMcq}}
+                            <img src="{{.}}" class="math-crop">
+                        {{/isMcq}}
+                        {{^isMcq}}
+                            <img src="{{.}}" class="math-crop-frq">
+                        {{/isMcq}}
+                    {{/images}}
+                    {{#selected-answer}}
+                        <p>You put {{selected-answer}}</p>
+                    {{/selected-answer}}
+                    {{^selected-answer}}
+                        <p>You left this empty</p>
+                    {{/selected-answer}}
+                </figure>
+            {{/isCorrect}}
+        {{/questions}}
+    </script>
     <!--results-->
-
     <div id="results" style="display:none;">
         <h1>Results</h1>
         <h3>Press ctrl + p to export this page as a PDF and to use during the lesson!</h3>
+        <h2>Jump to section:</h2>
+        <ul>
+            <li><a href="#rw_results">Reading/Writing 1</a></li>
+            <li><a href="#rw2_reuslts">Reading/Writing 2</a></li>
+            <li><a href="#math_results">Math 1</a></li>
+            <li><a href="#math2_results">Math 2</a></li>
+        </ul>
+        <div id="rw_results">
+
+        </div>
+        <div id="rw2_results">
+
+        </div>
+        <div id="math_results">
+
+        </div>
+        <div id="math2_results">
+
+        </div>
     </div>
+    <button style="width:100px; height:100px;"onclick="clearStorage()">Clear localStorage</button>
+    <script>
+        function clearStorage() {
+            localStorage.clear();
+            console.log("local storage cleared!");
+        }
+    </script>
 </body>
 </html>

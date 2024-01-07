@@ -3,7 +3,7 @@ window.mathHardQuestions4 = {
     {
       "question": 1,
       "images": [
-        "../images/bb4/math/c1.png"
+        "../images/bb4/mathHard/c1.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -11,7 +11,7 @@ window.mathHardQuestions4 = {
     {
       "question": 2,
       "images": [
-        "../images/bb4/math/c2.png"
+        "../images/bb4/mathHard/c2.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -19,7 +19,7 @@ window.mathHardQuestions4 = {
     {
       "question": 3,
       "images": [
-        "../images/bb4/math/c3.png"
+        "../images/bb4/mathHard/c3.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -27,7 +27,7 @@ window.mathHardQuestions4 = {
     {
       "question": 4,
       "images": [
-        "../images/bb4/math/c4.png"
+        "../images/bb4/mathHard/c4.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -35,7 +35,7 @@ window.mathHardQuestions4 = {
     {
       "question": 5,
       "images": [
-        "../images/bb4/math/c5.png"
+        "../images/bb4/mathHard/c5.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -43,7 +43,7 @@ window.mathHardQuestions4 = {
     {
       "question": 6,
       "images": [
-        "../images/bb4/math/c6.png"
+        "../images/bb4/mathHard/c6.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -51,7 +51,7 @@ window.mathHardQuestions4 = {
     {
       "question": 7,
       "images": [
-        "../images/bb4/math/c7.png"
+        "../images/bb4/mathHard/c7.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -59,7 +59,7 @@ window.mathHardQuestions4 = {
     {
       "question": 8,
       "images": [
-        "../images/bb4/math/c8.png"
+        "../images/bb4/mathHard/c8.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -67,7 +67,7 @@ window.mathHardQuestions4 = {
     {
       "question": 9,
       "images": [
-        "../images/bb4/math/c9.png"
+        "../images/bb4/mathHard/c9.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -75,7 +75,7 @@ window.mathHardQuestions4 = {
     {
       "question": 10,
       "images": [
-        "../images/bb4/math/c10.png"
+        "../images/bb4/mathHard/c10.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -83,7 +83,7 @@ window.mathHardQuestions4 = {
     {
       "question": 11,
       "images": [
-        "../images/bb4/math/c11.png"
+        "../images/bb4/mathHard/c11.png"
       ],
       "selected-answer": "",
       "actual-answer": "-.9333, -14/15"
@@ -91,7 +91,7 @@ window.mathHardQuestions4 = {
     {
       "question": 12,
       "images": [
-        "../images/bb4/math/c12.png"
+        "../images/bb4/mathHard/c12.png"
       ],
       "selected-answer": "",
       "actual-answer": "4.06"
@@ -99,7 +99,7 @@ window.mathHardQuestions4 = {
     {
       "question": 13,
       "images": [
-        "../images/bb4/math/c13.png"
+        "../images/bb4/mathHard/c13.png"
       ],
       "selected-answer": "",
       "actual-answer": "289"
@@ -107,7 +107,7 @@ window.mathHardQuestions4 = {
     {
       "question": 14,
       "images": [
-        "../images/bb4/math/c14.png"
+        "../images/bb4/mathHard/c14.png"
       ],
       "selected-answer": "",
       "actual-answer": "44"
@@ -115,7 +115,7 @@ window.mathHardQuestions4 = {
     {
       "question": 15,
       "images": [
-        "../images/bb4/math/c15.png"
+        "../images/bb4/mathHard/c15.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
@@ -123,7 +123,7 @@ window.mathHardQuestions4 = {
     {
       "question": 16,
       "images": [
-        "../images/bb4/math/c16.png"
+        "../images/bb4/mathHard/c16.png"
       ],
       "selected-answer": "",
       "actual-answer": "14.5, 29/2"
@@ -131,7 +131,7 @@ window.mathHardQuestions4 = {
     {
       "question": 17,
       "images": [
-        "../images/bb4/math/c17.png"
+        "../images/bb4/mathHard/c17.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -139,7 +139,7 @@ window.mathHardQuestions4 = {
     {
       "question": 18,
       "images": [
-        "../images/bb4/math/c18.png"
+        "../images/bb4/mathHard/c18.png"
       ],
       "selected-answer": "",
       "actual-answer": "C"
@@ -147,7 +147,7 @@ window.mathHardQuestions4 = {
     {
       "question": 19,
       "images": [
-        "../images/bb4/math/c19.png"
+        "../images/bb4/mathHard/c19.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
@@ -155,7 +155,7 @@ window.mathHardQuestions4 = {
     {
       "question": 20,
       "images": [
-        "../images/bb4/math/c20.png"
+        "../images/bb4/mathHard/c20.png"
       ],
       "selected-answer": "",
       "actual-answer": "10"
@@ -163,7 +163,7 @@ window.mathHardQuestions4 = {
     {
       "question": 21,
       "images": [
-        "../images/bb4/math/c21.png"
+        "../images/bb4/mathHard/c21.png"
       ],
       "selected-answer": "",
       "actual-answer": "B"
@@ -171,7 +171,7 @@ window.mathHardQuestions4 = {
     {
       "question": 22,
       "images": [
-        "../images/bb4/math/c22.png"
+        "../images/bb4/mathHard/c22.png"
       ],
       "selected-answer": "",
       "actual-answer": "D"
