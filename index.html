@@ -54,6 +54,7 @@
     <script>
        function submitForm(event) {
             event.preventDefault(); // Prevents the default form submission behavior
+            console.log(document.getElementById('answers').value);
             gradeTest();
         }
         document.getElementById('gradeForm').addEventListener('submit', submitForm);

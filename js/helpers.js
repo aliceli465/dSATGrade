@@ -55,10 +55,10 @@ function gradeTest() {
                 studentMath.push(columns[2]);
             }
             if(!(/\d/.test(columns[3]))) {
-                studentMath.push(columns[2].toUpperCase());
+                studentMath2.push(columns[3].toUpperCase());
             }
             else{
-                studentMath.push(columns[3]);
+                studentMath2.push(columns[3]);
             }
         }
 
@@ -138,9 +138,9 @@ function loadResults(rwTemplate, mathTemplate) {
     });
 
     $("#rw_results").html("<h3>R/W Module 1</h3>" + rw_output);
-    $("#rw2_results").html("<h3>R/W Module 1</h3>" + rw_output2);
-    $("#math_results").html("<h3>R/W Module 1</h3>" + math_output);
-    $("#math2_results").html("<h3>R/W Module 1</h3>" + math_output2);
+    $("#rw2_results").html("<h3>R/W Module 2</h3>" + rw_output2);
+    $("#math_results").html("<h3>Math Module 1</h3>" + math_output);
+    $("#math2_results").html("<h3>Math Module 2</h3>" + math_output2);
 
     //change visuals
     document.getElementById('results').style.display = 'block';
