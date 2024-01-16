@@ -131,7 +131,7 @@ window.mathQuestions1 = {
             "type": "frq",
             "images": ["images/bb1/math/nc19.png"],
             "selected-answer": "",
-            "actual-answer": ["0.8823","0.8824","15/17"]          
+            "actual-answer": ["0.8823","0.8824","15/17","45/51"]          
         },
         {
             "question": 20,
