@@ -24,7 +24,15 @@ body {
     width:800px;
     height:560px;
     /* top right bottom left*/
-    clip-path: inset(70px 200px 90px 0px)
+    clip-path: inset(85px 200px 68px 0px)
+  }
+  .math-crop2 {
+    margin-left:-180px;
+    margin-top: -100px;
+    width:800px;
+    height:560px;
+    /* top right bottom left*/
+    clip-path: inset(85px 200px 68px 0px)
   }
   
   .math-crop-frq {
