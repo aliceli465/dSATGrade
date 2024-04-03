@@ -2,7 +2,7 @@ function setJSON() {
     const testNum = document.getElementById('testNumber').value;
     const rwEH = document.getElementById('rwEH').value;
     const mathEH = document.getElementById('mathEH').value;
-    console.log("setting items for test " + testNum + "with sections: " + rwEH + " " + mathEH);
+    console.log("setting items for test " + testNum + " with sections: " + rwEH + " " + mathEH);
     localStorage.setItem('rw1', JSON.stringify(window['rwQuestions'+testNum]));
     console.log("successfully set rw1");
     localStorage.setItem('rw2', JSON.stringify(window['rw'+rwEH+'Questions'+testNum]));
@@ -31,15 +31,15 @@ function gradeTest() {
     const studentMath2 = [];
 
     //set localstorage stuff
-    console.log("setting items for test " + testNum + "with sections: " + rwEH + " " + mathEH);
+    console.log("setting items for test " + testNum + " with sections: " + rwEH + " " + mathEH);
     localStorage.setItem('rw1', JSON.stringify(window['rwQuestions'+testNum]));
-    console.log("successfully set rw1");
+    console.log("successfully set rw1 for test " + testNum);
     localStorage.setItem('rw2', JSON.stringify(window['rw'+rwEH+'Questions'+testNum]));
-    console.log("successfully set rw2");
+    console.log("successfully set rw2 for test " + testNum);
     localStorage.setItem('math1', JSON.stringify(window['mathQuestions'+testNum]));
-    console.log("successfully set math1");
+    console.log("successfully set math1 for test " + testNum);
     localStorage.setItem('math2', JSON.stringify(window['math'+mathEH+'Questions'+testNum]));
-    console.log("successfully set math2");
+    console.log("successfully set math2 for test " + testNum);
 
     //extract vals into cols
     for (let i = 0; i < rows.length; i++) {
