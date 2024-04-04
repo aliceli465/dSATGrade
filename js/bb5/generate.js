@@ -40,7 +40,7 @@ function convertRW(answerKey, section, label, col) {
   for (let i = 0; i < 27; i++) {
     const columns = rows[i].trim().split('\t');
     const questionNumber = i+1;
-    const images = [`../images/bb5/${section}/${label}${questionNumber}.png`];
+    const images = [`images/bb5/${section}/${label}${questionNumber}.png`];
     const actualAnswer = columns[col];
     
     questions.push({

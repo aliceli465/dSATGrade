@@ -60,7 +60,7 @@ function convertMath(answerKey, section, label, col) {
   for (let i = 0; i < 22; i++) {
     const columns = rows[i].trim().split('\t');
     const questionNumber = i+1;
-    const images = [`../images/bb6/${section}/${label}${questionNumber}.png`];
+    const images = [`images/bb6/${section}/${label}${questionNumber}.png`];
     let actualAnswer;
     let type;
     if (columns[col] === 'A' || columns[col] === 'B' || columns[col] === 'C' || columns[col] === 'D') {
