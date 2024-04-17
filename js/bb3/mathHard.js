@@ -4,7 +4,7 @@ window.mathHardQuestions3 = {
       "question": 1,
       "type": "mcq",
       "images": [
-        "images/bb3/mathHard/c1.png"
+        "images/bb3/mathHard/c1.png","images/bb3/mathHard/c1.2.png"
       ],
       "selected-answer": "",
       "actual-answer": "A"
