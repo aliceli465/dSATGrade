@@ -208,7 +208,7 @@ window.mathHardQuestions3 = {
         "images/bb3/mathHard/c22.png"
       ],
       "selected-answer": "",
-      "actual-answer": "B"
+      "actual-answer": "C"
     }
   ]
 };
