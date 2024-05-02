@@ -146,3 +146,28 @@ function loadResults(rwTemplate, mathTemplate) {
     document.getElementById('results').style.display = 'block';
 }
 
+function loadMathOnly(mathTemplate) {
+    var math1_ = JSON.parse(localStorage.getItem("math1"));
+    var math2_ = JSON.parse(localStorage.getItem("math2"));
+    document.getElementById("resultType").textContent = "Math only without answers";
+
+    var math_output = Mustache.render($("#"+mathTemplate).html(), {
+        questions: math1_.questions.map(function(question) {
+            question.isMcq = question.type === 'mcq';
+            question.isCorrect = question["actual-answer"].includes(question["selected-answer"]) && question["selected-answer"].trim() !== "";
+            return question;
+        })
+    });
+    var math_output2 = Mustache.render($("#"+mathTemplate).html(), {
+        questions: math2_.questions.map(function(question) {
+            question.isMcq = question.type === 'mcq';
+            question.isCorrect = question["actual-answer"].includes(question["selected-answer"]) && question["selected-answer"].trim() !== "";
+            return question;
+        })
+    });
+    $("#math_results").html("<h3>Math Module 1</h3>" + math_output);
+    $("#math2_results").html("<h3>Math Module 2</h3>" + math_output2);
+
+    //change visuals
+    document.getElementById('results').style.display = 'block';
+}

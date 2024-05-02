@@ -72,6 +72,7 @@
         <button class="cute-button" onclick="entireAnswer()">Entire test with answers</button>
         <button class="cute-button" onclick="incorrectNoAnswer()">Incorrect only w/o answer key</button>
         <button class="cute-button" onclick="incorrectWithAnswer()">Incorrect only with answer key</button>
+        <button class="cute-button" onclick="mathNoAnswer()">Math only w/o answer key</button>
         <script>
             //Entire test with answers:  #rwE, #mathE
             //Incorrect only w/o answer key: #rwINA, #mathINA
@@ -87,6 +88,10 @@
             function incorrectWithAnswer() {
                 console.log("setting incorrect with answers");
                 loadResults("rwIA", "mathIA");
+            }
+            function mathNoAnswer() {
+                console.log("setting math without answers");
+                loadMathOnly("mathINA");
             }
         </script>
     </div>
