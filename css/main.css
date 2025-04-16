@@ -46,7 +46,7 @@ body {
   width: 800px;
   height: 560px;
   /* top right bottom left*/
-  clip-path: inset(110px 0px 100px 400px);
+  /*clip-path: inset(110px 0px 100px 400px);*/
 }
 
 .rw-crop {
